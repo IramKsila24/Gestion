@@ -1,16 +1,25 @@
 pipeline {
     agent any
+    environment {
+        DOCKER_IMAGE = "school-app:latest"
+    }
     stages {
-        stage('Cloner le projet') {
+        stage('Clone') {
             steps {
-                git 'https://github.com/IramKsila24/Gestion.git'
+                git branch: 'main', 
+                url: 'https://github.com/IramKsila24/test.git'
             }
         }
         stage('Build') {
             steps {
-                echo 'Build en cours...'
+                sh 'mvn clean install'
             }
         }
-    }
+stage('Construire Image Docker') {
+ steps {
+ sh 'docker build -t school-app:latest .'
+ }
+ }
+ }
 }
 
