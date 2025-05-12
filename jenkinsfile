@@ -1,29 +1,14 @@
 pipeline {
 agent any
-environment {
-SONARQUBE_SERVER = 'SonarQubeServerName'
-DOCKER_IMAGE = 'monprojet:latest'
-}
 stages {
-stage('Cloner depuis GitHub') {
+stage('Clone') {
 steps {
-git branch: 'main', url: 'https://github.com/IramKsila24/Gestion.git'
+git 'https://github.com/tonrepo.git'
 }
 }
-stage('Build Maven') {
+stage('Build') {
 steps {
-sh 'mvn clean install' }
-}
-stage('Analyse SonarQube') {
-steps {
-withSonarQubeEnv('SonarQubeServerName') {
-sh 'mvn sonar:sonar'
-}
-}
-}
-stage('Construire Image Docker') {
-steps {
-sh 'docker build -t monprojet:latest .'
+sh 'mvn clean install'
 }
 }
 }
