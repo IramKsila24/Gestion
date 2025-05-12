@@ -1,15 +1,16 @@
 pipeline {
-agent any
-stages {
-stage('Clone') {
-steps {
-git 'https://github.com/IramKsila24/Gestion.git'
+    agent any
+    stages {
+        stage('Cloner le projet') {
+            steps {
+                git 'https://github.com/IramKsila24/Gestion.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Build en cours...'
+            }
+        }
+    }
 }
-}
-stage('Build') {
-steps {
-sh 'mvn clean install'
-}
-}
-}
-}
+
