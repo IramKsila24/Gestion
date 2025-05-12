@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="views.AddStockController"
+            style="-fx-background-color: #f5f5f5;" prefWidth="400" prefHeight="300">
+
+    <!-- Top - Title -->
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #3f51b5; -fx-padding: 15;">
+            <Label text="Ajouter un Stock" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 20;"/>
+        </HBox>
+    </top>
+
+    <!-- Center - Form -->
+    <center>
+        <VBox spacing="15" style="-fx-padding: 20;">
+            <!-- Product Selection -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Produit : " style="-fx-font-size: 14; -fx-font-weight: bold; -fx-min-width: 100;"/>
+                <ComboBox fx:id="productComboBox" promptText="Sélectionnez un produit"
+                          style="-fx-pref-width: 200;"/>
+            </HBox>
+
+            <!-- Quantity -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Quantité : " style="-fx-font-size: 14; -fx-font-weight: bold; -fx-min-width: 100;"/>
+                <TextField fx:id="quantityField" promptText="Quantité en stock"
+                           style="-fx-pref-width: 200;"/>
+            </HBox>
+
+            <!-- Location -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Emplacement : " style="-fx-font-size: 14; -fx-font-weight: bold; -fx-min-width: 100;"/>
+                <TextField fx:id="locationField" promptText="Emplacement du stock"
+                           style="-fx-pref-width: 200;"/>
+            </HBox>
+        </VBox>
+    </center>
+
+    <!-- Bottom - Buttons -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_RIGHT" style="-fx-padding: 10; -fx-background-color: #e0e0e0;">
+            <Button text="Ajouter" onAction="#handleAddStock"
+                    style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;"/>
+            <Button text="Annuler" onAction="#handleCancel"
+                    style="-fx-background-color: #f44336; -fx-text-fill: white;"/>
+        </HBox>
+    </bottom>
+</BorderPane>

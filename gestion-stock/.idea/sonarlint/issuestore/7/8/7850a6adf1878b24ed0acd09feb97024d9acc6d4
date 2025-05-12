@@ -1,0 +1,14 @@
+
+m
+java:S11922"KDefine a constant instead of duplicating this literal "created_at" 3 times.(Ÿ­âÓùÿÿÿÿ8µÁ›¨ë2
+i
+java:S11920"LDefine a constant instead of duplicating this literal "description" 3 times.(¡‚Í8µÁ›¨ë2
+m
+java:S1192."KDefine a constant instead of duplicating this literal "id_product" 3 times.(®½—ùûÿÿÿÿ8µÁ›¨ë2
+h
+java:S11921"FDefine a constant instead of duplicating this literal "price" 3 times.(ïÚ®ùÿÿÿÿ8¶Á›¨ë2
+G	java:S106"+Replace this use of System.err by a logger.(‡Òøø8ÇÁ›¨ë2
+G	java:S1066"+Replace this use of System.err by a logger.(İ±•Í8ÊÁ›¨ë2
+L	java:S106O"+Replace this use of System.err by a logger.(×€”úÿÿÿÿÿ8ÍÁ›¨ë2
+G	java:S106c"+Replace this use of System.err by a logger.(Úûï8ĞÁ›¨ë2
+H	java:S106"+Replace this use of System.err by a logger.(‚èœ8‹ÈÉ¨ë2

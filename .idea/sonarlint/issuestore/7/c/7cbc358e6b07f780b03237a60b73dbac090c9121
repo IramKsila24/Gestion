@@ -1,0 +1,14 @@
+
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÜ»şüÿÿÿÿ8ûÊ–©ë2
+[
+java:S1117">Rename "connection" which hides the field declared at line 11.(ïÆ¥8ôë¢Ğë2
+G	java:S106"+Replace this use of System.err by a logger.(èŒ÷ê8ƒ †©ë2
+L	java:S106*"+Replace this use of System.err by a logger.(ë•Ïıÿÿÿÿ8ƒ †©ë2
+G	java:S106B"+Replace this use of System.err by a logger.(õçò8ˆ †©ë2
+[
+java:S1117J">Rename "connection" which hides the field declared at line 11.(ïÆ¥8­Ğë2
+L	java:S106^"+Replace this use of System.err by a logger.(î«öõşÿÿÿÿ8¼ãšĞë2
+G	java:S106t"+Replace this use of System.err by a logger.(òíõÈ8„ì¢Ğë2
+H	java:S106‚"+Replace this use of System.err by a logger.(‚Úı¿8‡ì¢Ğë2
+H	java:S106™"+Replace this use of System.out by a logger.(–å¤³8ˆ †©ë2
+H	java:S106œ"+Replace this use of System.err by a logger.(êòòˆ8—­Ğë2

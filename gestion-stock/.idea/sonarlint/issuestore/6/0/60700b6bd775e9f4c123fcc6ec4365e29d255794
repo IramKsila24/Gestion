@@ -1,0 +1,5 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÅ¥¬ûÿÿÿÿ8”ÉÏë2
+v	java:S116"URename this field "id_product" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö’¥îúÿÿÿÿ8‘”ÉÏë2
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Ÿ¾­ñşÿÿÿÿ8©³ÒÏë2

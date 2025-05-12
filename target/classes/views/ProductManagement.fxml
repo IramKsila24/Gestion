@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="views.ProductController"
+            style="-fx-background-color: #f5f5f5;">
+
+    <!-- Top - Titre -->
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #3f51b5; -fx-padding: 15;">
+            <Label text="Gestion des Produits" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 20;"/>
+        </HBox>
+    </top>
+
+    <!-- Center - Tableau des produits -->
+    <center>
+        <VBox spacing="10" style="-fx-padding: 15;">
+            <!-- Barre de recherche -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <TextField fx:id="searchField" promptText="Rechercher par nom..." style="-fx-pref-width: 300;"/>
+                <Button text="Rechercher" onAction="#handleSearch" style="-fx-background-color: #2196F3; -fx-text-fill: white;"/>
+                <Button text="Réinitialiser" onAction="#handleResetSearch" style="-fx-background-color: #607D8B; -fx-text-fill: white;"/>
+            </HBox>
+
+            <!-- Tableau des produits -->
+            <TableView fx:id="productTable" style="-fx-padding: 5;">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" prefWidth="50">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="idProduct" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="colName" text="Nom" prefWidth="150">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="name" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="colDescription" text="Description" prefWidth="250">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="description" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="colPrice" text="Prix" prefWidth="80">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="price" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="colCreatedAt" text="Date création" prefWidth="150">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="createdAt" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="actionColumn" text="Actions" prefWidth="150"/>
+                </columns>
+            </TableView>
+
+        </VBox>
+    </center>
+
+    <!-- Bottom - Boutons d'action -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_RIGHT" style="-fx-padding: 10; -fx-background-color: #e0e0e0;">
+            <Button text="Ajouter Produit" onAction="#showAddProductDialog"
+                    style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;"/>
+            <Button text="Actualiser" onAction="#refreshProducts"
+                    style="-fx-background-color: #2196F3; -fx-text-fill: white;"/>
+            <Button text="Retour au Dashboard" onAction="#goToDashboard"
+                    style="-fx-background-color: #9E9E9E; -fx-text-fill: white;"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

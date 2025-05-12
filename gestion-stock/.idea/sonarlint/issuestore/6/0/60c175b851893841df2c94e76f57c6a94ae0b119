@@ -1,0 +1,10 @@
+
+W
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ì½¨ë2
+F
+java:S2115")Add password protection to this database.(åÔÉÊ8€½¨ë2
+L	java:S106"+Replace this use of System.out by a logger.(„š¨‰ıÿÿÿÿ8½¨ë2
+L	java:S106"+Replace this use of System.err by a logger.(¸“”Øşÿÿÿÿ8½¨ë2
+G	java:S106$"+Replace this use of System.err by a logger.(ÉˆêÈ8‚½¨ë2
+G	java:S106-"+Replace this use of System.out by a logger.(¸ í8¦™Ğë2
+G	java:S1060"+Replace this use of System.err by a logger.(µí¥ú8¦™Ğë2

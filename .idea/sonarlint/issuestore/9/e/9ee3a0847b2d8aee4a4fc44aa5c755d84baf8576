@@ -1,0 +1,8 @@
+
+[
+java:S3252H">Use static access with "javafx.stage.Window" for "getWindows".(—Í›»8†¦ Ïë2
+G	java:S106X"+Replace this use of System.err by a logger.(È±Éú8¦ Ïë2
+K
+java:S1128".Remove this unused import 'javafx.scene.Node'.(ÑÖ¬ï8¢úıĞë2
+T
+java:S1128"7Remove this unused import 'java.awt.event.ActionEvent'.(Úù“‘8¢úıĞë2
