@@ -7,8 +7,7 @@ DOCKER_IMAGE = 'monprojet:latest'
 stages {
 stage('Cloner depuis GitHub') {
 steps {
-git branch: 'main', url: 'https://github.com/votre-utilisateur/nom-du-
-repository.git'
+git branch: 'main', url: 'https://github.com/IramKsila24/Gestion.git'
 }
 }
 stage('Build Maven') {
